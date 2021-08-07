@@ -1,10 +1,16 @@
 import java.util.Scanner;
 
 public class tutorial {
-    // method: identifier = main, with (parameter(s)). 
-    // Parameter has arguments (the data passed into method/input)
-    // access modifier = public, no object needed = static, 
+    // class: contains everything, has members (methods or properties)
+    // method: does something, has statements
+    // statements: tell the computer something
+    // properties: store something 
+    // access modifier: (public/private) who can use?
+    // static: no instance of class is needed
+    // object: instance of a class 
     // return type = void (none)
+
+    // arguments: 
     public static void main(String[] args) { 
         // print Hello World!
         System.out.println("Hello World!");   // output
