@@ -1,2 +1,3 @@
 # JavaTutorial
-Calab Curry's Java tutorial for cross-platform use
+Caleb Curry's Java tutorial for cross-platform use
+
