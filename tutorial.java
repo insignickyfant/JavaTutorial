@@ -12,6 +12,11 @@ public class tutorial {
 
     // arguments: what you pass to a method (Hello World!) (when you call a method)
     // parameter: variable that stores the argument (when you define a method)
+    // variable: stores a value
+    // expression: combine operands, evaluates to a value
+    // oparator: work on operands to produce a value
+    // operand: the things the operator works on
+    // literal: a value (you can store in a variable)
     
     public static void main(String[] args) { 
         // Day 1: print Hello World!
@@ -26,6 +31,7 @@ public class tutorial {
         System.out.println("Hi " + name + "!"); // print user input s
 
         // Day 3
-
+        String easier = "wow, this is easier! " + name; // shorthand for new String
+        System.out.println(easier);
     }
 }
