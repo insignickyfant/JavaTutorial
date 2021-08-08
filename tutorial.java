@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class tutorial {
     // class: contains everything, has members (methods or properties)
     // method: does something, has statements (also called function)
@@ -68,8 +69,17 @@ public class tutorial {
 
     }*/
 
-    // Day 6: more user input
+    // Day 6: more user input and numeric datatypes
     public static void main(String[] args) {
-        
+        Scanner scanner = new Scanner(System.in);
+        int y = scanner.nextInt();
+        int a = y + 20;
+        System.out.println(a);
+
+        BigDecimal money = scanner.nextBigDecimal(); // fixed point number, exact
+        // nextBoolean accepts only true/false, otherwise error
+        // nextInt(radix) is weird, look up.
+        // can cast to diff primitive type, like
+        int x = (int) scanner.nextDouble();
     }
 }
