@@ -14,16 +14,16 @@ public class tutorial {
     // parameter: variable that stores the argument (when you define a method)
     
     public static void main(String[] args) { 
-        // print Hello World!
-        System.out.println("Hello World!"); // output
+        // Day 1: print Hello World!
+        //System.out.println("Hello World!"); // output
         
         // Day 2: take user input
         //System.out.println("Hello " + args[0]); // direct commandline input arg
-
+        System.out.println("What's your name bruh?");
         // declare new variable of data type Scanner called 'in' (arbitrary)
-        Scanner in = new Scanner(System.in); // input from console
-        String s = in.nextLine(); // store input in variable s
-        System.out.println("Hi " + s + "!"); // print user input s
+        Scanner scanner = new Scanner(System.in); // input from console
+        String name = scanner.nextLine(); // store input in variable s
+        System.out.println("Hi " + name + "!"); // print user input s
 
 
     }
