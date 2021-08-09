@@ -81,5 +81,8 @@ public class tutorial {
         // nextInt(radix) is weird, look up.
         // can cast to diff primitive type, like
         int x = (int) scanner.nextDouble();
+
+        // check what you can do with numeric classes
+        System.out.println(Double.isNaN(Math.sqrt(-1))); // e.g.
     }
 }
