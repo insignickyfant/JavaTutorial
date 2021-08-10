@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 
-public class tutorial {
+//public class tutorial {
+    /* Terminology
     // class: contains everything, has members (methods or properties)
     // method: does something, has statements (also called function)
     // statements: tell the computer something
@@ -9,9 +10,9 @@ public class tutorial {
     // access modifier: (public/private) who can use?
     // static: no instance of class is needed
     // object: instance of a class 
-    // return type = void (none)
-
-    /*public static void main(String[] args) { 
+    // return type = void (none)*/
+    /* Day 1-4
+    public static void main(String[] args) { 
         // Day 1: print Hello World!
         //System.out.println("Hello World!"); // output
         
@@ -68,8 +69,7 @@ public class tutorial {
         System.out.println(x);
 
     }*/
-
-    // Day 6: more user input and numeric datatypes
+    /*Day 6: more user input and numeric datatypes
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int y = scanner.nextInt();
@@ -83,6 +83,82 @@ public class tutorial {
         int x = (int) scanner.nextDouble();
 
         // check what you can do with numeric classes
-        System.out.println(Double.isNaN(Math.sqrt(-1))); // e.g.
+        System.out.println(Double.isNaN(Math.sqrt(-1))); // e.g.*/
+
+    /* Operators
+         * math with different classes doesn't work, always use the same
+         * like 
+         * double x = (double) 5 / 2.0;
+         * with int, you get 2, modulo 1.
+         * operands should be the same datatype as result.
+         * +, -, /, *, % (modulus) 5%2=1
+         * 
+         * precedence: (parenteses)
+         *             /, *, % from left to right
+         *             +, - from left to right
+         * 
+         * x++ EQUALS x += 1 EQUALS x = x + 1 (same with minus)
+         * ++x the same increment, but it works differently
+
+         int x = 5;
+         int a = x++; // assigned to a, then increment
+         System.out.println(x);
+         System.out.println(a); // gives 6, 5
+        
+         //but
+
+         int x = 5;
+         int a = ++x; // increment first, then assigned to a
+         System.out.println(x);
+         System.out.println(a); // gives 6, 6
+        */
+    
+    /* Methods on Integer objects (static)
+         * max: gives the largest of 2
+         * compare: gives -, 0, + to show if x is smaller, equal, bigger than y argument
+         * Integer.valueOf(string) gives the Integer value of a string (number)
+         * Integer.parseInt(string) give the int value (primitive)*/
+
+    /* String datatype (not a primitive, but a class)
+         * If you make a String, you make an object (instance of a class)
+         * String uses double quotes (char is single quotes)
+         * use single character of a string:
+         
+        String s = "hello i'm\nbored";
+        s.charAt(10);
+          
+         * \n = newline,  \t = tab,  \\ = \,  \' = ',  \" = "
+         
+        String name = "Caleb";
+        String.format("hello %s", name);
+        name.length(); (gives 5) */
+    
+    /* String Methods
+        String x = "how you doing bro"
+        charAt: spaces are also chars. index starts at 0
+        x.concat("?") // adds to x
+        x.contains("you"): true
+        x.indexOf("how"): 0
+        x.indexOf takes a second arg to say from what index it should start searching
+        x.indexOf("how", diff.indexOf("my")+1))
+        x.lastIndexOf("how"); gives the index where the last intance of how starts 
+        
+        x.toUpperCase/toLowerCase()
+        x.strip(): takes away white space before and after
+        x.stripLeading/stripTrailing for only start/end whitespace
+        x.substring(beginIndex, endIndex)
+        x.repeat(times)
+        x.equals(string) --> boolean    
+    }*/
+    
+    /* Classes and Objects
+     * In a class, there's members: methods and properties. 
+     * Classes are used to represent something, like a user.
+     * 
+     * */
+    
+public class tutorial {
+    public static void main(String[] args) {
+    
     }
 }
