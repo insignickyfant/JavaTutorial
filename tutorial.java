@@ -69,7 +69,7 @@ import java.util.Scanner;
         System.out.println(x);
 
     }*/
-    /*Day 6: more user input and numeric datatypes
+    /* Day 6: more user input and numeric datatypes
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int y = scanner.nextInt();
@@ -84,7 +84,6 @@ import java.util.Scanner;
 
         // check what you can do with numeric classes
         System.out.println(Double.isNaN(Math.sqrt(-1))); // e.g.*/
-
     /* Operators
          * math with different classes doesn't work, always use the same
          * like 
@@ -112,13 +111,11 @@ import java.util.Scanner;
          System.out.println(x);
          System.out.println(a); // gives 6, 6
         */
-    
     /* Methods on Integer objects (static)
          * max: gives the largest of 2
          * compare: gives -, 0, + to show if x is smaller, equal, bigger than y argument
          * Integer.valueOf(string) gives the Integer value of a string (number)
          * Integer.parseInt(string) give the int value (primitive)*/
-
     /* String datatype (not a primitive, but a class)
          * If you make a String, you make an object (instance of a class)
          * String uses double quotes (char is single quotes)
@@ -132,7 +129,6 @@ import java.util.Scanner;
         String name = "Caleb";
         String.format("hello %s", name);
         name.length(); (gives 5) */
-    
     /* String Methods
         String x = "how you doing bro"
         charAt: spaces are also chars. index starts at 0
@@ -150,15 +146,23 @@ import java.util.Scanner;
         x.repeat(times)
         x.equals(string) --> boolean    
     }*/
-    
     /* Classes and Objects
-     * In a class, there's members: methods and properties. 
+     * In a class, there's members: methods and properties (public variable).
      * Classes are used to represent something, like a user.
+     * By convention, classes start with an upper case.
      * 
      * */
     
 public class tutorial {
     public static void main(String[] args) {
-    
+        User user = new User(); // create instance of our user class
+        System.out.println("Hi! What's your first name?");
+        Scanner scanner = new Scanner(System.in);
+        user.firstName = scanner.nextLine(); // setting a property
+        
+        //user.firstName = "Nicky"; // setting a property
+        user.lastName = "Shears"; // should use loop for this
+
+        System.out.println(user.getFullName()); 
     }
 }
