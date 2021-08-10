@@ -180,9 +180,28 @@ public class Tutorial {
     }
 }*/
 
-
+/* Password comparison and Method chaining
+ * return: end method you're in
 public class Tutorial {
     public static void main(String[] args) {
+        String password = "let me in!";
+        System.out.println("Guess the password: ");
+        Scanner scan = new Scanner(System.in);
+        String guess = scan.nextLine();
 
+        if (password.toLowerCase().equals(guess.toLowerCase())) // method chaining
+        {
+            System.out.println("Hooray!");
+        } else if ("can't touch this".equals(guess)) 
+        {
+            System.out.println("Hammer time!");
+        } else System.out.println("Get outta here!");
+    }
+} */
+
+// 2:22:40
+public class Tutorial {
+    public static void main(String[] args) {
+    
     }
 }
