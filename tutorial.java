@@ -153,7 +153,7 @@ import java.util.Scanner;
      * 
      * */
     
-public class tutorial {
+public class Tutorial {
     public static void main(String[] args) {
         User user = new User(); // create instance of our user class
         System.out.println("Hi! What's your first name?");
