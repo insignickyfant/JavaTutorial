@@ -148,6 +148,7 @@ import java.util.Scanner;
     }*/
     /* Classes and Objects
      * In a class, there's members: methods and properties (public variable).
+     * (a non-public (private) variable is called a field) String s instead of public String s
      * Classes are used to represent something, like a user.
      * By convention, classes start with an upper case.
      * 
