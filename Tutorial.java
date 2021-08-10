@@ -150,10 +150,8 @@ import java.util.Scanner;
      * In a class, there's members: methods and properties (public variable).
      * (a non-public (private) variable is called a field) String s instead of public String s
      * Classes are used to represent something, like a user.
-     * By convention, classes start with an upper case.
-     * 
-     * */
-    
+     * By convention, classes start with an upper case.*/
+/* User class and string comparison    
 public class Tutorial {
     public static void main(String[] args) {
         User user = new User(); // create instance of our user class
@@ -165,5 +163,26 @@ public class Tutorial {
         user.lastName = "Shears"; // should use loop for this
 
         System.out.println(user.getFullName()); 
+
+        String password = "let me in!";
+        System.out.println("Guess the password: ");
+        Scanner scan = new Scanner(System.in);
+        String guess = scanner.nextLine();
+
+        if (password.equals(guess) == true) {
+            System.out.println("Hooray!");
+        } else System.out.println("incorrect");
+        // alternative: 
+        // if(password == guess)
+        // for primitives, this will work, but not for objects!
+        // for objects, this comparison asks if it's the same memory location
+        // and not the content
+    }
+}*/
+
+
+public class Tutorial {
+    public static void main(String[] args) {
+
     }
 }
