@@ -243,7 +243,7 @@ if(name.equals("Nicky")) {
    welcome = true;
 } else welcome = false; */
 
-/* (Do) While loop
+/* Loops: while, do while, for
  * ICU: initialisation, condition, update
 int i = 1;
 while (i < 11) {
@@ -253,7 +253,7 @@ while (i < 11) {
  *
  * to execute something at least once, then check if you want to 
  * continue doing the same thing, use a do while loop
- * */
+ *
 public class Tutorial {
     public static void main(String[] args) {
         String password = "let me in";
@@ -266,5 +266,45 @@ public class Tutorial {
         } while (!guess.equals(password));
         System.out.println("You're in!");
         scanner.close();
+    }
+} 
+ * 
+ * If you know how many times you want a loop to iterate, use a for loop.
+ * The for loop houses the ICU in it's parenteses. 
+
+public class Tutorial {
+    public static void main(String[] args) {
+        for(int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+    }
+} 
+
+public class Tutorial {
+    public static void main(String[] args) {
+        int i = 9;
+        while(i >= 0) {
+            int k = i;
+            while(k >= 0) {
+                System.out.print(k + " ");
+                k--;
+            }
+            System.out.println();
+            i--;
+        }
+        for(int i = 9; i >= 0; i--) { // make number pyramid (kinda)
+            for(int k = i; k >=0; k--) {
+                if (k == 2) continue; // skips 2
+                if(k == 6) break; // breaks out of the loop
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+    }
+} */
+
+public class Tutorial {
+    public static void main(String[] args) {
+        int[] grades = new int[10];
     }
 }
