@@ -303,6 +303,7 @@ public class Tutorial {
     }
 } */
 
+/* Arrays */
 public class Tutorial {
     public static void main(String[] args) {
         int[] grades = new int[10];
