@@ -199,7 +199,36 @@ public class Tutorial {
     }
 } */
 
-// 2:22:40
+/* Comparison and Logical operators 
+ * == equality
+ * != inequality
+ * < less than
+ * > greater than
+ * >= greater than or equal to
+ * <= less than or equal to
+ * ----> they always return true or false
+ * 
+ * && and, both need to be true
+ * || or, at least one needs to be true
+ * ! not, opposite must be true
+ * 
+ * don't use && and || in the same expression, or at least use () */
+ 
+/* Switch or if statements
+ * use switch if discreet number of values to choose from
+ * use if when there's ranges of values
+ * 
+ * just see what's easier and requires the least amount of code I guess
+ * 
+switch(name){
+    case "Nicky":
+    case "Charlie":
+        sysout("welcome my man");
+        break;
+    default:
+        sysout("fuck off");
+        break;
+} */
 public class Tutorial {
     public static void main(String[] args) {
     
