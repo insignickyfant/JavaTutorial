@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 //public class tutorial {
     /* Terminology
     // class: contains everything, has members (methods or properties)
@@ -196,6 +195,8 @@ public class Tutorial {
         {
             System.out.println("Hammer time!");
         } else System.out.println("Get outta here!");
+
+        scanner.close(); // or it will stay open, needing memory
     }
 } */
 
@@ -214,7 +215,7 @@ public class Tutorial {
  * 
  * don't use && and || in the same expression, or at least use () */
  
-/* Switch or if statements
+/* Switch or if statements, ternary ?
  * use switch if discreet number of values to choose from
  * use if when there's ranges of values
  * 
@@ -228,9 +229,42 @@ switch(name){
     default:
         sysout("fuck off");
         break;
-} */
+} 
+ * 
+ * ternary (conditional) operator: ?
+ * takes 3 operands: expression ? result if true : result if false
+ * 
+boolean welcome = name.equals("Nicky") ? true : false
+ *
+ * basically states that if the name is Nicky, then welcome is true, else false.
+ * same thing but in if statement, so more code:
+boolean welcome;
+if(name.equals("Nicky")) {
+   welcome = true;
+} else welcome = false; */
+
+/* (Do) While loop
+ * ICU: initialisation, condition, update
+int i = 1;
+while (i < 11) {
+    System.out.println("iteration " + i);
+    i++;
+}
+ *
+ * to execute something at least once, then check if you want to 
+ * continue doing the same thing, use a do while loop
+ * */
 public class Tutorial {
     public static void main(String[] args) {
-    
+        String password = "let me in";
+        Scanner scanner = new Scanner(System.in);
+        String guess;
+
+        do {
+            System.out.println("Guess password: ");
+            guess = scanner.nextLine();
+        } while (!guess.equals(password));
+        System.out.println("You're in!");
+        scanner.close();
     }
 }
