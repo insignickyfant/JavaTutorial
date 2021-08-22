@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 //public class tutorial {
@@ -306,6 +307,14 @@ public class Tutorial {
 /* Arrays */
 public class Tutorial {
     public static void main(String[] args) {
-        int[] grades = new int[10];
-    }
+        //int[] grades = new int[10];
+        //grades[0] = 5;
+        //System.out.println(grades[0]);
+        // or
+        int[] grades = {1,5,6,3,7,8,10};
+        System.out.println(grades[1]);
+        System.out.println(Arrays.toString(grades));
+        int[][] moregrades = {{9,3,4},{5,3,2,6,7,6}};
+        System.out.println(Arrays.deepToString(moregrades));
+    } // end at 3:36:24
 }
